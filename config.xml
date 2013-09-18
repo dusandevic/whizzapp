@@ -4,14 +4,15 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>PhoneGap Build Application</name>
+<name>WhizzApp</name>
 
 <description>
-A simple PhoneGap Build application.
+WhizzApp Tennis Application
 </description>
 
-<author href="https://example.com" email="you@example.com">
-Your Name
+<author href="https://www.dusandevic.com" email="dusandevic@gmail.com">
+Dusan Devic
 </author>
 
+<preference name="show-splash-screen-spinner" value="false" />
 </widget>
