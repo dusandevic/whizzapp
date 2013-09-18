@@ -103,3 +103,17 @@
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-duration: 200ms !important;
 }
+
+#pocetna {
+    background: url(img/wall1920.png) !important;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment:scroll !important;
+    background-size: cover !important;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
