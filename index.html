@@ -9,36 +9,169 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
   <link href="whizzDesign.css" rel="stylesheet" type="text/css">
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+  <script src="js/whizzapp.js"></script>
   <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
 </head> 
 <body> 
 
-<div data-role="page" id="page">
+<div data-role="page" id="pocetna">
 	<div data-role="header">
 		<h1>WhizzApp</h1>
-        <a href="#" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
 	</div>
 	<div data-role="content">
     		<div class="ui-grid-a">
-			    <div class="ui-block-a"><img src="img/logo.png" width="400" height="217" alt="img"></div>
-			    <div class="ui-block-b" style="text-align:right"><img src="img/logotw.png" width="400" height="217" alt="img"></div>
+			    <div class="ui-block-a"><img src="img/logo.png" style="width: 40%" alt="img"></div>
+			    <div class="ui-block-b" style="text-align:right"><img src="img/logotw.png" style="width: 40%" alt="img"></div>
 			</div><!-- /grid-a -->
-
-			<div class="ui-grid-c">
-                <div class="ui-block-a"><div class="ui-bar ui-bar-e centar"><a href="#" class="dugme">VIDEOS</a></div></div>
-                <div class="ui-block-b"><div class="ui-bar ui-bar-e centar"><a href="#" class="dugme">MILESTONES</a></div></div>
-                <div class="ui-block-c"><div class="ui-bar ui-bar-e centar"><a href="#" class="dugme">FAVOURITES</a></div></div>
-                <div class="ui-block-d"><div class="ui-bar ui-bar-e centar"><a href="#" class="dugme">RECENTS</a></div></div>
-			</div><!-- /grid-c -->
+			<br><br>
+			<div class="ui-grid-a">
+                <div class="ui-block-a"><div class="ui-bar ui-bar-e centar"><a href="#pgVideos" class="dugme">VIDEOS</a></div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e centar"><a href="#pgMilestones" class="dugme">MILESTONES</a></div></div>
+                <div class="ui-block-a"><div class="ui-bar ui-bar-e centar"><a href="#pgFavourites" class="dugme">FAVOURITES</a></div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e centar"><a href="#pgRecents" class="dugme">RECENTS</a></div></div>
+			</div><!-- /grid-a -->
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
             <ul class='navigacija'>
-                <li><a href="#" id="home" data-icon="custom" data-theme="c">Home</a></li>
-                <li><a href="#" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
-                <li><a href="#" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
-                <li><a href="#" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
-                <li><a href="#" id="search" data-icon="custom" data-theme="c">Search</a></li>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+<div data-role="page" id="pgVideos">
+  <div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Video content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="pgFavourites">
+  <div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Fav content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="pgMilestones">
+  <div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Milestones content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="pgDownloads">
+  	<div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Downloads content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="pgSearch">
+  	<div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Search content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="pgRecents">
+  	<div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Recents content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="pgSettings">
+  	<div data-role="header">
+		<h1>WhizzApp</h1>
+        <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
+	</div>
+  <div data-role="content">Settings content...</div>
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul class='navigacija'>
+                <li><a href="#pocetna" id="home" data-icon="custom" data-theme="c">Home</a></li>
+                <li><a href="#pgVideos" id="videos" data-icon="custom" data-theme="c">Videos</a></li>
+                <li><a href="#pgMilestones" id="milestones" data-icon="custom" data-theme="c">Milestones</a></li>
+                <li><a href="#pgDownloads" id="downloads" data-icon="custom" data-theme="c">Downloads</a></li>
+                <li><a href="#pgSearch" id="search" data-icon="custom" data-theme="c">Search</a></li>
             </ul>
         </div>
 	</div>
