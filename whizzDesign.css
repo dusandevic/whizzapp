@@ -98,3 +98,8 @@
 .centar{
 	text-align: center;
 }
+
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 200ms !important;
+}
