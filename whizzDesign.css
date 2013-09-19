@@ -103,14 +103,30 @@
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-duration: 200ms !important;
 }
-
-#pocetna {
-    background: url(img/wall1920.png) !important;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-attachment:scroll !important;
-    background-size: 100% 93% !important;
+@media screen and (orientation:landscape) {
+	#pocetna {
+		background: url(img/wall1920.png) !important;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-attachment:scroll !important;
+		background-size: 100% 93% !important;
+	}
 }
+
+@media screen and (orientation:portrait) {
+	#pocetna {
+		background: url(img/wallPort.png) !important;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-attachment:scroll !important;
+		background-size: 100% 94% !important;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+}
+
 .ui-page {
     background: transparent;
 }
