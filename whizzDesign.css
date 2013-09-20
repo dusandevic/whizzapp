@@ -133,3 +133,14 @@
 .ui-content{
     background: transparent;
 }
+
+.swiper-slide img {
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(85%, transparent), to(rgba(255,255,255,0.1)));
+}
+
+.card {
+	border: solid;
+	background: white;
+	width: 500px;
+	text-align: center;
+}

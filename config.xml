@@ -16,6 +16,7 @@ Dusan Devic
 
 <preference name="show-splash-screen-spinner" value="false" />
 
+<icon src="icon.png" />
 <icon src="icons/ios7/Icon57.png" gap:platform="ios" width="57" height="57" />
 <icon src="icons/ios7/Icon-72.png" gap:platform="ios" width="72" height="72" />
 <icon src="icons/ios7/Icon114.png" gap:platform="ios" width="114" height="114" />
