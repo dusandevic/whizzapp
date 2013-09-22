@@ -77,26 +77,50 @@ Basic Swiper Styles
 	-ms-touch-action: pan-x;
 }
 
-/* ===============================================================
-Your custom styles, here you need to specify container's and slide's
-sizes, pagination, etc.
-================================================================*/
-.swiper-container {
-	/* Specify Swiper's Size: */
 
-	width: 100%;
-	height: auto;
+/* Retina ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.swiper-container {
+		width: 1024px;
+		height: 409px;
+	}
+	
+	#pgVideos .ui-content {
+		padding-left: 0;
+	}
+	
+	.card{
+		border-radius: 15px;
+	}
 }
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.swiper-container {
+		width: 768px;
+		height: 332px;
+	}
+	
+	#pgVideos .ui-content {
+		padding-left: 0;
+	}
+	
+	.card{
+		border-radius: 15px;
+	}
+}
+
 .swiper-slide {
 	/* Specify Slides's Size: */
-	
-	width: 400px;
-	height: auto;
+
 }
-.swiper-slide-active {
-	/* Specific active slide styling: */
-	
-}
+
 .swiper-slide-visible {
 	/* Specific visible slide styling: */	
 

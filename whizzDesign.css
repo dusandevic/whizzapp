@@ -110,7 +110,7 @@
 		background-position:center center;
 		background-attachment:scroll !important;
 		background-size: 100% 93% !important;
-	}
+	}	
 }
 
 @media screen and (orientation:portrait) {
@@ -134,13 +134,14 @@
     background: transparent;
 }
 
-.swiper-slide img {
-	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(85%, transparent), to(rgba(255,255,255,0.1)));
-}
-
 .card {
 	border: solid;
 	background: white;
-	width: 500px;
 	text-align: center;
+}
+
+.card img {
+	width: 100%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }

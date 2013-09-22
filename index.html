@@ -60,7 +60,7 @@
                               <!--First Slide-->
                               <div class="swiper-slide">
                               	<div class='card'>                               
-                                    <img src="milestones/n1.jpg" width="500" height="300">
+                                    <img src="milestones/n1.jpg">
                                     <h3>Neki naslov</h3>
                                     <p>Neki tekst bla bla bla bla</p>
                                 </div>
@@ -69,7 +69,7 @@
                               <!--Second Slide-->
                               <div class="swiper-slide">
                                 <div class='card'>                               
-                                    <img src="milestones/n2.jpg" width="500" height="300">
+                                    <img src="milestones/n2.jpg">
                                     <h3>Neki naslov</h3>
                                     <p>Neki tekst bla bla bla bla</p>
                                 </div>
@@ -78,7 +78,7 @@
                               <!--Third Slide-->
                               <div class="swiper-slide"> 
                                 <div class='card'>                               
-                                    <img src="milestones/n3.jpg" width="500" height="300">
+                                    <img src="milestones/n3.jpg">
                                     <h3>Neki naslov</h3>
                                     <p>Neki tekst bla bla bla bla</p>
                                 </div>
@@ -86,7 +86,7 @@
                               
                               <div class="swiper-slide"> 
                                 <div class='card'>                               
-                                    <img src="milestones/n4.jpg" width="500" height="300">
+                                    <img src="milestones/n4.jpg">
                                     <h3>Neki naslov</h3>
                                     <p>Neki tekst bla bla bla bla</p>
                                 </div>
@@ -94,7 +94,7 @@
                               
                               <div class="swiper-slide"> 
                                 <div class='card'>                               
-                                    <img src="milestones/n5.jpg" width="500" height="300">
+                                    <img src="milestones/n5.jpg">
                                     <h3>Neki naslov</h3>
                                     <p>Neki tekst bla bla bla bla</p>
                                 </div>
@@ -216,7 +216,35 @@
 		<h1>WhizzApp</h1>
         <a href="#pgSettings" data-icon="gear" data-iconpos="notext" class="ui-btn-right">Options</a>
 	</div>
-  <div data-role="content">Settings content...</div>
+  <div data-role="content">
+    	
+        <h3>Registration</h3> 
+        <div id='regStatus'>Lock Status: <span>LOCKED</span></div>
+        <div class="ui-grid-a">
+          <div class="ui-block-a"><a href="#" data-role="button">Unlock</a></div>
+          <div class="ui-block-b"><a href="#" data-role="button">Restore</a></div>
+        </div>
+        
+        
+        <h3>Behaviour</h3>
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup">
+            <legend>Use Data Network</legend>
+            <input type="checkbox" name="useDataNetwork" id="useDataNetwork_0" class="custom" value="" />
+            <label for="useDataNetwork_0">Yes</label>
+          </fieldset>
+          <p>Recent size</p>
+          <p>Downloaded Data Size</p>
+
+		  <h3>About</h3> 	
+          <ul data-role="listview" data-inset="true">
+            <li><a href="#">Write a Review</a></li>
+            <li><a href="#">About the Developer</a></li>
+            <li><a href="#">Our Website</a></li>
+          </ul>
+                    
+        </div>      	
+  </div>
   <div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
             <ul class='navigacija'>
