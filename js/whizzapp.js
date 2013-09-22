@@ -5,17 +5,32 @@ $(document).bind("mobileinit", function(){
   });    
   	$.mobile.page.prototype.options.addBackBtn = true;
 	
-	$(window).resize();
+	//$(window).resize();
 
 	$(function(){	  
-	  var mySwiper = $('.swiper-container').swiper({
-			slidesPerView:2,
-			centeredSlides: true,
-			loop:true,
-			tdFlow: {}	
-		});
-		
- 	
+	  
 	})	
+	
+	$(document)
+		.bind(
+				"pagechange",
+				function(event, data) {
+					var url = data.absUrl;	
+					try{
+						if(url.indexOf("#pgMilestones") != -1){
+							setTimeout(function() {
+								var mySwiper = $('.swiper-container').swiper({
+									slidesPerView:2,
+									centeredSlides: true,
+									loop:true,
+									visibilityFullFit: true,
+									tdFlow: {}	
+								});
+							}, 200);							
+						}
+					}catch(e){
+						console.log(e);
+					}
+				});
 });
 

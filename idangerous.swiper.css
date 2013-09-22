@@ -77,7 +77,16 @@ Basic Swiper Styles
 	-ms-touch-action: pan-x;
 }
 
+.swiper-container {
+		width: 768px;
+		height: 332px;
+	}
 
+	.card{
+		border-radius: 15px;
+	}
+	
+	
 /* Retina ----------- */
 @media only screen 
 and (min-device-width : 768px) 
@@ -88,7 +97,7 @@ and (orientation : landscape) {
 		height: 409px;
 	}
 	
-	#pgVideos .ui-content {
+	#pgMilestones .ui-content {
 		padding-left: 0;
 	}
 	
@@ -107,7 +116,7 @@ and (orientation : portrait) {
 		height: 332px;
 	}
 	
-	#pgVideos .ui-content {
+	#pgMilestones .ui-content {
 		padding-left: 0;
 	}
 	
